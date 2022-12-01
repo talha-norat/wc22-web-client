@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'wc22-web-client'`, () => {
+  it(`should have as title 'world-cup-bracket'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('wc22-web-client');
+    expect(app.title).toEqual('world-cup-bracket');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('wc22-web-client app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('world-cup-bracket app is running!');
   });
 });

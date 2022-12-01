@@ -1,0 +1,5 @@
+.container {
+  height: 64px !important;
+  width: 100%;
+  overflow-y: hidden;
+}

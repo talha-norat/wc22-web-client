@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+head, body {
+  height: 100vh !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: url('assets/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.frosted-f1,
+.frosted-f2,
+.frosted-f3,
+.frosted-f4,
+.frosted-f5,
+.frosted-f6,
+.frosted-f7,
+.frosted-f8,
+.frosted-f9,
+.frosted-f10
+{
+  /* background: linear-gradient(
+    135deg,
+    rgba(120,120,120,0.4),
+    rgba(120,120,120,0.2),
+  ) !important; */
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(120,120,120,0.4),
+    rgba(120,120,120,0.2),
+  ) !important;
+}
+
+.frosted-f1 {
+  backdrop-filter: blur(1px);
+}
+.frosted-f2 {
+  backdrop-filter: blur(2px);
+}
+.frosted-f3 {
+  backdrop-filter: blur(3px);
+}
+.frosted-f4 {
+  backdrop-filter: blur(4px);
+}
+.frosted-f5 {
+  backdrop-filter: blur(5px);
+}
+.frosted-f6 {
+  backdrop-filter: blur(6px);
+}
+.frosted-f7 {
+  backdrop-filter: blur(7px);
+}
+.frosted-f8 {
+  backdrop-filter: blur(8px);
+}
+.frosted-f9 {
+  backdrop-filter: blur(9px);
+}
+.frosted-f10 {
+  backdrop-filter: blur(10px);
+}
+
