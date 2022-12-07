@@ -1,0 +1,63 @@
+<div
+  class="match-container frosted-f2"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+>
+  <div class="match-container-header">
+    <span
+      >Game {{ match.id }} - {{ match.datetime | date : "dd/MM/yyyy HH:mm" }} -
+      {{ match.venue }}</span
+    >
+  </div>
+  <div
+    class="match-game-container"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    style="width: 100%"
+  >
+    <div
+      class="match-team-container"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="10px"
+      [class.winner]="
+        match.winner_code && match.winner_code === match.home_team.country
+      "
+      [class.loser]="
+        match.winner_code && match.winner_code !== match.home_team.country
+      "
+    >
+      <div class="flag-container">
+        <img [src]="getCountryImage(match.home_team_country)" alt="" />
+      </div>
+      <span>{{ match.home_team?.name }}</span>
+    </div>
+    <div
+      class="score-container"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutGap="20px"
+    >
+      <span>{{ match.home_team?.goals }}</span>
+      <span> - </span>
+      <span>{{ match.away_team?.goals }}</span>
+    </div>
+    <div
+      class="match-team-container"
+      fxLayout="row"
+      fxLayoutAlign="end center"
+      fxLayoutGap="10px"
+      [class.winner]="
+        match.winner_code && match.winner_code === match.away_team.country
+      "
+      [class.loser]="
+        match.winner_code && match.winner_code !== match.away_team.country
+      "
+    >
+      <span>{{ match.away_team?.name }}</span>
+      <div class="flag-container">
+        <img [src]="getCountryImage(match.away_team_country)" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

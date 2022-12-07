@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ITeam } from 'src/app/core/models/team.interface';
 import { TeamDialogComponent } from 'src/app/shared/team-dialog/team-dialog.component';
-import { avifTeams } from 'src/environments/environment-base';
+import { avifTeams, getCountryImage } from 'src/environments/environment-base';
 
 @Component({
   selector: 'app-group-team-row',
@@ -10,6 +10,9 @@ import { avifTeams } from 'src/environments/environment-base';
   styleUrls: ['./group-team-row.component.css']
 })
 export class GroupTeamRowComponent implements OnInit {
+
+  getCountryImage = getCountryImage;
+
 
   @Input() fullWidth = true;
   @Input() team: ITeam;
@@ -26,9 +29,5 @@ export class GroupTeamRowComponent implements OnInit {
 
   ngOnInit(): void {
     this.team.imgSrc = this.getCountryImage(this.team.country);
-  }
-
-  getCountryImage(country: string): string {
-    return avifTeams.includes(country) ? `assets/images/${country}.avif` : `assets/images/${country}.webp`;
   }
 }

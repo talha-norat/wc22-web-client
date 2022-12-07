@@ -1,0 +1,22 @@
+<div class="router-container">
+  <div class="content-container">
+    <div>
+      <div fxLayout="row" fxLayoutAlign="center center" class="fix-res-title">
+        <strong>Fixtures/Results</strong>
+      </div>
+    </div>
+    <div
+      class="fix-res-container"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="16px"
+    >
+      <app-match-row
+        style="width: 100%"
+        *ngFor="let match of matches"
+        [match]="match"
+      ></app-match-row>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

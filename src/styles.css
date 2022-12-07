@@ -78,3 +78,10 @@ body {
   border-radius: 10px !important;
 }
 
+.won {
+  border: 3px solid green;
+}
+.lost {
+  border: 3px solid red;
+}
+

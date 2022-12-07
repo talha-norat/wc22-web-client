@@ -1,8 +1,9 @@
 .footer-container {
-  height: 130px;
+  height: 100px;
   width: 100%;
   padding: 0px 20px;
-  color: black;
+  color: white;
+  background-color: rgba(50, 0, 0, 0.4);
 }
 
 .fixed-width {
@@ -12,6 +13,7 @@
 img {
   height: 28px !important;
   width: 28px !important;
+  filter: invert();
 }
 
 .info-container {

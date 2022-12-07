@@ -2,11 +2,7 @@
   height: 64px !important;
   width: 100%;
   overflow-y: hidden;
-  background-color: linear-gradient(
-    135deg,
-    rgba(120,120,120,0.4),
-    rgba(120,120,120,0.2),
-  );
+  background-color: rgba(50, 0, 0, 0.4);
 }
 
 .nav-button {
