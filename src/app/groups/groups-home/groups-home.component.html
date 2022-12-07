@@ -1,0 +1,43 @@
+<div class="router-container">
+  <div class="content-container">
+    <div>
+      <div
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+        class="groups-title"
+      >
+        <strong>Groups</strong>
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <button
+            mat-icon-button
+            (click)="fullWidth = false"
+            matTooltip="Toggle Grid View"
+          >
+            <mat-icon>grid_view</mat-icon>
+          </button>
+          <button
+            mat-icon-button
+            (click)="fullWidth = true"
+            matTooltip="Toggle List View"
+          >
+            <mat-icon>list_view</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="groups-container"
+      [class.grid-layout]="!fullWidth"
+      [class.list-layout]="fullWidth"
+    >
+      <app-group
+        *ngFor="let group of groups"
+        [class.grid-group]="!fullWidth"
+        [class.list-group]="fullWidth"
+        [group]="group"
+        [fullWidth]="fullWidth"
+      ></app-group>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

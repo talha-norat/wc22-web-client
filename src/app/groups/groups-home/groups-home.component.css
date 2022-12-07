@@ -1,0 +1,37 @@
+.groups-title {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 100px;
+}
+
+.groups-container {
+  width: 80%;
+  margin: 0px auto;
+  padding: 16px;
+}
+
+/* GRID LAYOUT STYLING */
+
+.grid-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-group {
+  width: 30%;
+  margin: 30px ;
+}
+
+/* LIST LAYOUT STYLING */
+
+.list-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-group {
+  width: 100%;
+  margin: 0px 0px 40px 0px;
+}

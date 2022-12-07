@@ -1,0 +1,19 @@
+.footer-container {
+  height: 130px;
+  width: 100%;
+  padding: 0px 20px;
+  color: black;
+}
+
+.fixed-width {
+  width: 300px;
+}
+
+img {
+  height: 28px !important;
+  width: 28px !important;
+}
+
+.info-container {
+  font-size: 14px;
+}

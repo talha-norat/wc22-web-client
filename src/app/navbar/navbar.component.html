@@ -1,10 +1,45 @@
-<div class="container frosted-f5" fxLayout="row">
-  <div fxLayout="column" fxLayoutAlign="center center" style="margin: 6px 0px">
-    <img src="assets/images/wc_logo.png" height="50px" />
-    <img
-      src="assets/images/wc_logo_text.png"
-      style="margin-left: -16px"
-      height="46px"
-    />
-  </div>
+<div class="container">
+  <mat-toolbar style="background: transparent">
+    <div
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      style="margin: 6px 0px"
+      class="home"
+      routerLink=""
+    >
+      <img src="assets/images/wc_logo.png" height="50px" alt="" />
+      <img
+        src="assets/images/wc_logo_text.png"
+        style="margin-left: -16px"
+        height="46px"
+        alt=""
+      />
+    </div>
+    <div style="width: 30px"></div>
+    <div>
+      <button mat-button class="nav-button" routerLink="teams">
+        <strong>Teams</strong>
+      </button>
+      <div *ngIf="active === 'teams'" class="active"></div>
+    </div>
+    <div>
+      <button mat-button class="nav-button" routerLink="groups">
+        <strong>Groups</strong>
+      </button>
+      <div *ngIf="active === 'groups'" class="active"></div>
+    </div>
+    <div>
+      <button mat-button class="nav-button" routerLink="fixtures-results">
+        <strong>Fixtures/Results</strong>
+      </button>
+      <div *ngIf="active === 'fixtures-results'" class="active"></div>
+    </div>
+    <div>
+      <button mat-button class="nav-button" routerLink="bracket">
+        <strong>Bracket</strong>
+      </button>
+      <div *ngIf="active === 'bracket'" class="active"></div>
+    </div>
+  </mat-toolbar>
 </div>
+<mat-progress-bar mode="determinate" color="accent"></mat-progress-bar>

@@ -1,0 +1,62 @@
+<div class="team-dialog-container">
+  <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+    <div class="avatar-container">
+      <img [src]="data.imgSrc" alt="" />
+    </div>
+    <div fxLayout="column">
+      <strong class="country">{{ data.country }}</strong>
+      <span class="name">{{ data.name }}</span>
+    </div>
+  </div>
+  <div class="team-dialog-content">
+    <mat-tab-group
+      color="accent"
+      mat-stretch-tabs="true"
+      mat-align-tabs="center"
+    >
+      <mat-tab label="Stats">
+        <div fxLayout="column" fxLayoutGap="16px" style="margin: 16px 0px">
+          <div class="stat">
+            <span class="stat-label">Group</span>
+            <span class="stat-value">{{ data.group_letter }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Games Played</span>
+            <span class="stat-value">{{ data.games_played }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Games Won</span>
+            <span class="stat-value">{{ data.wins }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Games Drawn</span>
+            <span class="stat-value">{{ data.draws }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Games Lost</span>
+            <span class="stat-value">{{ data.losses }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Goals Scored</span>
+            <span class="stat-value">{{ data.goals_for }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Goals Conceded</span>
+            <span class="stat-value">{{ data.goals_against }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Goal Difference</span>
+            <span class="stat-value">{{ data.goal_differential }}</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Group Points</span>
+            <span class="stat-value">{{ data.group_points }}</span>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="end center">
+  <button mat-raised-button cdkFocusInitial mat-dialog-close>Close</button>
+</div>

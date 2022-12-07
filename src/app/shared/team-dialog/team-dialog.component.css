@@ -1,0 +1,38 @@
+.avatar-container{
+  height: 62px;
+  width: 62px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.country {
+  font-size: 30px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.team-dialog-container {
+  color: white;
+}
+
+.team-dialog-content {
+  margin: 10px 0px;
+}
+
+.stat {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+::ng-deep.mat-tab-label{
+  color:white;
+  font-weight: 700;
+}

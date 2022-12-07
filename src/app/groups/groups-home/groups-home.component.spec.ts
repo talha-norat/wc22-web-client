@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BracketCountryComponent } from './bracket-country.component';
+import { GroupsHomeComponent } from './groups-home.component';
 
-describe('BracketCountryComponent', () => {
-  let component: BracketCountryComponent;
-  let fixture: ComponentFixture<BracketCountryComponent>;
+describe('GroupsHomeComponent', () => {
+  let component: GroupsHomeComponent;
+  let fixture: ComponentFixture<GroupsHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BracketCountryComponent ]
+      declarations: [ GroupsHomeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BracketCountryComponent);
+    fixture = TestBed.createComponent(GroupsHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

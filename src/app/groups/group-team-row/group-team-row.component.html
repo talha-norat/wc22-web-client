@@ -1,0 +1,40 @@
+<div
+  class="group-team-row-container frosted-f1"
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+  fxLayoutGap="10px"
+  (click)="onClick()"
+>
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <div class="flag-container">
+      <img [src]="team.imgSrc" alt="" />
+    </div>
+    <span>{{ team.name }}</span>
+  </div>
+  <div fxLayout="row" fxLayoutAlign=" center">
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.games_played
+    }}</span>
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.wins
+    }}</span>
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.draws
+    }}</span>
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.losses
+    }}</span>
+    <span *ngIf="fullWidth" [class.list-team]="fullWidth">{{
+      team.goals_for
+    }}</span>
+    <span *ngIf="fullWidth" [class.list-team]="fullWidth">{{
+      team.goals_against
+    }}</span>
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.goal_differential
+    }}</span>
+    <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth">{{
+      team.group_points
+    }}</span>
+  </div>
+</div>

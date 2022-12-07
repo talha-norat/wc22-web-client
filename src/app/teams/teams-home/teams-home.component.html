@@ -1,0 +1,17 @@
+<div class="router-container">
+  <div class="content-container">
+    <div>
+      <div fxLayout="row" fxLayoutAlign="center center" class="teams-title">
+        <strong>Teams</strong>
+      </div>
+    </div>
+    <div
+      class="teams-container"
+      fxLayout="row wrap"
+      fxLayoutAlign="space-evenly center"
+    >
+      <app-team-card *ngFor="let team of teams" [data]="team"></app-team-card>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 head, body {
   height: 100vh !important;
   margin: 0px;
@@ -14,6 +16,15 @@ body {
     color: white;
 }
 
+.router-container {
+  height: calc(100% - 4em - 4px);
+  overflow-y: auto;
+}
+
+.content-container {
+  padding: 0px 16px;
+}
+
 .frosted-f1,
 .frosted-f2,
 .frosted-f3,
@@ -25,19 +36,11 @@ body {
 .frosted-f9,
 .frosted-f10
 {
-  /* background: linear-gradient(
-    135deg,
-    rgba(120,120,120,0.4),
-    rgba(120,120,120,0.2),
-  ) !important; */
-  background: -webkit-linear-gradient(
-    135deg,
-    rgba(120,120,120,0.4),
-    rgba(120,120,120,0.2),
-  ) !important;
+  background: linear-gradient(135deg,rgba(120,120,120, 0.5), rgba(120,120,120,0.2));
 }
 
 .frosted-f1 {
+  -webkit-backdrop-filter: blur(1em);
   backdrop-filter: blur(1px);
 }
 .frosted-f2 {
@@ -65,6 +68,13 @@ body {
   backdrop-filter: blur(9px);
 }
 .frosted-f10 {
+  -webkit-backdrop-filter: blur(10em);
   backdrop-filter: blur(10px);
+}
+
+.mat-dialog-container {
+  background: rgba(98, 6, 6, 0.4);
+  border: 2px solid white;
+  border-radius: 10px !important;
 }
 

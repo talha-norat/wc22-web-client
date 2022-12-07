@@ -1,0 +1,11 @@
+<div
+  class="team-card"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  fxLayoutGap="8px"
+  (click)="onClick()"
+>
+  <app-team-flag [data]="data"></app-team-flag>
+  <strong>({{ data.country }})</strong>
+  <strong style="text-align: center">{{ data.name }}</strong>
+</div>

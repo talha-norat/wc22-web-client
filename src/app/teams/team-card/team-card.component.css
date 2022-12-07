@@ -1,0 +1,10 @@
+.team-card {
+  width: 120px;
+  height: 180px;
+  margin: 12px 70px;
+  padding: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+

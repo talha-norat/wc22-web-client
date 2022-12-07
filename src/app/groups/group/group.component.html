@@ -1,0 +1,40 @@
+<div class="group-container" fxLayout="column" fxLayoutGap="16px">
+  <span class="group-title">Group {{ group.letter }}</span>
+  <div
+    class="group-header"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    fxLayoutGap="10px"
+  >
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+      <span>Team</span>
+    </div>
+    <div fxLayout="row" fxLayoutAlign=" center">
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >GP</span
+      >
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >W</span
+      >
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >D</span
+      >
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >L</span
+      >
+      <span *ngIf="fullWidth" [class.list-team]="fullWidth">GF</span>
+      <span *ngIf="fullWidth" [class.list-team]="fullWidth">GA</span>
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >GD</span
+      >
+      <span [class.list-team]="fullWidth" [class.grid-team]="!fullWidth"
+        >P</span
+      >
+    </div>
+  </div>
+  <app-group-team-row
+    *ngFor="let team of group.teams"
+    [team]="team"
+    [fullWidth]="fullWidth"
+  ></app-group-team-row>
+</div>

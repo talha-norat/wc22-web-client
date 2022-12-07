@@ -1,0 +1,11 @@
+.teams-container {
+  width: 80%;
+  margin: 0px auto;
+  padding: 16px;
+}
+
+.teams-title {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 100px;
+}
