@@ -1,1 +1,40 @@
-<p>bracket-home works!</p>
+<div class="router-container">
+  <div class="content-container">
+    <div>
+      <div fxLayout="row" fxLayoutAlign="center center" class="bracket-title">
+        <strong>Bracket</strong>
+      </div>
+    </div>
+    <div
+      class="bracket-container"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+    >
+      <app-bracket-side
+        [matches]="matches"
+        [filter]="[4, 5, 0, 1, 8, 9, 12]"
+      ></app-bracket-side>
+      <div fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <strong style="font-size: 12px">World Cup Final</strong>
+        </div>
+        <div
+          class="match-container"
+          fxLayout="row"
+          fxLayoutAlign="space-between center"
+          fxLayoutGap=".5em"
+        >
+          <app-team-flag [data]="matches[15].home_team"></app-team-flag>
+          <img src="assets/images/wc.png" width="50px" alt="" />
+          <app-team-flag [data]="matches[15].away_team"></app-team-flag>
+        </div>
+      </div>
+      <app-bracket-side
+        [matches]="matches"
+        [filter]="[6, 7, 2, 3, 10, 11, 13]"
+        [reversed]="true"
+      ></app-bracket-side>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,18 @@
+<div [class.row-reverse]="reversed" fxLayoutAlign=" center">
+  <app-bracket-stage
+    [matches]="matches"
+    [filter]="filter.slice(0, 4)"
+    [reversed]="reversed"
+  ></app-bracket-stage>
+  <app-bracket-stage
+    [matches]="matches"
+    [filter]="filter.slice(4, 6)"
+    [reversed]="reversed"
+  >
+  </app-bracket-stage>
+  <app-bracket-stage
+    [matches]="matches"
+    [filter]="filter.slice(6, 7)"
+    [reversed]="reversed"
+  ></app-bracket-stage>
+</div>

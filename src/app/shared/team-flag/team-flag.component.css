@@ -2,3 +2,19 @@
   border: 2px solid white;
   border-radius: 5px;
 }
+
+.flag {
+  width: 94px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-small {
+  width: 62px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

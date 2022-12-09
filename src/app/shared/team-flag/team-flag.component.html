@@ -1,9 +1,18 @@
 <div class="container">
   <img
-    [src]="data.imgSrc"
+    *ngIf="data && data.name !== 'To Be Determined'"
+    [src]="getCountryImage(data.country)"
     alt=""
-    [height]="height"
-    [width]="width"
+    [class.flag]="!smallFlag"
+    [class.flag-small]="smallFlag"
     [class.border]="hasBorder"
   />
+  <div
+    [class.flag]="!smallFlag"
+    [class.flag-small]="smallFlag"
+    [class.border]="hasBorder"
+    *ngIf="!data || data.name === 'To Be Determined'"
+  >
+    {{ data.country }}
+  </div>
 </div>

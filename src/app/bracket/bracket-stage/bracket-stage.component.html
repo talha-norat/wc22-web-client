@@ -1,0 +1,10 @@
+<div class="bracket-stage">
+  <div class="bracket-column">
+    <app-bracket-match
+      *ngFor="let i of filter"
+      fxLayout="column"
+      [match]="matches[i]"
+      [reversed]="reversed"
+    ></app-bracket-match>
+  </div>
+</div>

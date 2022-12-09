@@ -1,0 +1,10 @@
+.stage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse !important;
+}

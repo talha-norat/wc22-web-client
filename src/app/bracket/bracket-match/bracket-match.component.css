@@ -1,0 +1,22 @@
+.bracket-match-container {
+  margin: 6px 2em 24px;
+  background-color: rgba(50, 0, 0, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.row,
+.row-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}

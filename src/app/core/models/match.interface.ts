@@ -20,4 +20,5 @@ export interface IMatchTeam {
   name: string;
   goals: number;
   penalties: number;
+  imgSrc?: string;
 }

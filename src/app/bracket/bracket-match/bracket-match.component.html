@@ -1,0 +1,13 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <strong style="font-size: 12px">Game {{ match?.id }}</strong>
+</div>
+<div class="bracket-match-container" fxLayout="column" fxLayoutGap="10px">
+  <div [class.row]="!reversed" [class.row-reverse]="reversed">
+    <app-team-flag [smallFlag]="true" [data]="match?.home_team"></app-team-flag>
+    <strong>{{ match.home_team.goals ? match.home_team.goals : "-" }}</strong>
+  </div>
+  <div [class.row]="!reversed" [class.row-reverse]="reversed">
+    <app-team-flag [smallFlag]="true" [data]="match?.away_team"></app-team-flag>
+    <strong>{{ match.away_team.goals ? match.away_team.goals : "-" }}</strong>
+  </div>
+</div>

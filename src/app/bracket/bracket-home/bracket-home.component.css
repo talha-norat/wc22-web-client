@@ -1,0 +1,12 @@
+.bracket-title {
+  width: 80%;
+  margin: 16px auto;
+  font-size: 72px;
+}
+
+.match-container {
+  margin: 6px 2em 24px;
+  background-color: rgba(50, 0, 0, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+}
